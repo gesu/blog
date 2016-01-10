@@ -12,13 +12,13 @@
 
 .page-nav li {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1;
   padding: 1rem 0.5rem;
   box-sizing: border-box;
   width: 25%;
   text-align: center;
-  font-family: "Open-Sans";
+  font-family: "Myriad Pro", "Helvetica", "Arial", "sans-serif";
   font-weight: 600;
 }
 
