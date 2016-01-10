@@ -1,25 +1,22 @@
 ---
-title: a website by george su
+title: about | george su
+active: index
 ---
 
-<header class="masthead">
-  <div class="container">
-    <h1>
-      A Website
-    </h1>
-  </div>
-</header>
-
-<%= partial "nav" %>
-
-<div class="page-container">
+<div class="container">
   <h2>
     Hello,
   </h2>
   <p>
-    I am George Su. I am 23 years old.
+    I'm George. I'm a human from Earth interested in programming, information design, and films.
   </p>
   <p>
-    <%= link_to "License and Colophon", "/license-and-colophon.html" %>
+    I work at <%= link_to 'experiment.com', 'https://experiment.com' %> in San Francisco. I graduated from the University of Texas at Austin in 2013 with a BS in Electrical Engineering.
+  </p>
+  <p>
+    Email: <%= mail_to 'george.x.su@gmail.com' %>
+  </p>
+  <p>
+    <%= link_to "Colophon", "colophon.html" %>
   </p>
 </div>

@@ -1,277 +1,124 @@
 ---
 title: books | gsu
+active: books
+books:
+  - title: Kim
+    author: Rudyard Kipling
+  - title: Henderson the Rain King
+    author: Saul Bellow
+  - title: The Autobiography of Malcom X
+    author: Alex Haley
+  - title: Moby Dick
+    author: Herman Melville
+  - title: Alice in Wonderland
+    author: Lewis Carroll
+  - title: Horace and Me
+    author: Harry Eyres
+  - title: Discourse on Method
+    author: René Descartes
+  - title: Treasure Island
+    author: Robert Louis Stevenson
+  - title: Heart of Darkness
+    author: Joseph Conrad
+  - title: Atlas Shrugged
+    author: Ayn Rand
+  - title: The Visual Display of Quantitative Information
+    author: Edward Tufte
+  - title: The Cinema of Stanley Kubrick
+    author: Norman Kagan
+  - title: American Gods
+    author: Neil Gaiman
+  - title: 1984
+    author: George Orwell
+  - title: The Reason for God
+    author: Timothy Keller
+  - title: Zero to One
+    author: Peter Thiel
+  - title: The Meditations
+    author: Marcus Aurelius
+  - title: The Orphan Master's Son
+    author: Adam Johnson
+  - title: Cloud Atlas
+    author: David Mitchell
+  - title: Neuromancer
+    author: William Gibson
+  - title: Stories
+    author: Neil Gaiman and Al Sarrantonio
+  - title: The Secret History of the Lord of Musashi and Arrowroot
+    author: Junichiro Tanizaki
+  - title: The Old Man and the Sea
+    author: Ernest Hemingway
+  - title: The Satanic Verses
+    author: Salman Rushdie
+  - title: The Sun Also Rises
+    author: Ernest Hemingway
+  - title: For Whom the Bell Tolls
+    author: Ernest Hemingway
+  - title: The Snows of Kilimanjaro and Other Stories
+    author: Ernest Hemingway
+  - title: The Graveyard Book
+    author: Neil Gaiman
+  - title: The Enchiridion
+    author: Epictetus
+  - title: Coraline
+    author: Neil Gaiman
+  - title: Nineteen Eighty-Four
+    author: George Orwell
+  - title: Slaughterhouse-Five
+    author: Kurt Vonnegut
+  - title: Acess All Aread
+    author: Sara Wheeler
+  - title: And Then There Where None
+    author: Agatha Christie
+  - title: The Jungle Books
+    author: Rudyard Kipling
+  - title: The Hard Things About Hard Things
+    author: Ben Horowitz
+  - title: Nostromo
+    author: Joseph Conrad
+  - title: Gödel, Escher, Bach
+    author: Douglas R. Hofstadter
+  - title: The Lean Startup
+    author: Eric Ries
+  - title: The Hitchhiker's Guide to the Galaxy
+    author: Douglas Adams
+  - title: The Lion, the Witch, and the Wardrobe
+    author: C.S. Lewis
+  - title: A Song of Ice and Fire
+    author: George RR Martin
+  - title: The Flight of the Iguana
+    author: David Quammen
+  - title: The Wild Trees
+    author: Richard Preston
+  - title: The Hobbit
+    author: JRR Tolkein
+  - title: Of Mice and Men
+    author: John Steinbeck
+  - title: The Magician's Nephew
+    author: CS Lewis
+  - title: The Catcher in the Rye
+    author: JD Salinger
+  - title: The Alchemist
+    author: Paulo Coelho
 ---
 
-<header class="masthead">
-  <div class="container">
-    <h1>
-      A Website
-    </h1>
-  </div>
-</header>
-
-<%= partial "nav" %>
-
-<div class="page-container">
+<div class="container">
   <h2>
     Books
   </h2>
   <p>
-    Sometimes, I finish books. Sometimes, I even write about them.
+    I like reading other peoples' book lists, so here's mine. A digital bookshelf isn't quite as nice as a physical one, but it is much lighter. I believe that what you read, along with your own personal experiences at that particular time, influence your perception and mental model of the world a great deal even if you're not aware of it. This means that rereading stuff isn't necessarily a waste of time because even if the text has changed, the context that you're consuming the work has.
   </p>
-
-  <h3>
-    2015
-  </h3>
-  <p>
-    <ul class="unstyled">
+  <ul class="unstyled book-list">
+    <% current_page.data.books.each do |book| %>
       <li>
         <p>
-          Henderson the Rain King
-          <span class="book-author">
-            Saul Bellow
+          <%= book.title %>
+          <span class="author">
+            <%= book.author %>
           </span>
         </p>
       </li>
-      <li>
-        <p>
-          The Satanic Verses
-          <span class="book-author">
-            Salman Rushdie
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Enchiridion
-          <span class="book-author">
-            Epictetus
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Autobiography of Malcom X
-          <span class="book-author">
-            Alex Haley
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Reason for God
-          <span class="book-author">
-            Timothy Keller
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Meditations
-          <span class="book-author">
-            Marcus Aurelius
-          </span>
-        </p>
-      </li>
-    </ul>
-  </p>
-
-  <h3>
-    2014
-  </h3>
-  <p>
-    <ul class="unstyled">
-      <li>
-        <p>
-          The Orphan Master's Son
-          <span class="book-author">
-            Adam Johnson
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Cloud Atlas
-          <span class="book-author">
-            David Mitchell
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Neuromancer
-          <span class="book-author">
-            William Gibson
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Stories
-          <span class="book-author">
-            Neil Gaiman and Al Sarrantonio
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Secret History of the Lord of Musashi and Arrowroot
-          <span class="book-author">
-            Junichiro Tanizaki
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Old Man and the Sea
-          <span class="book-author">
-            Ernest Hemingway
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Sun Also Rises
-          <span class="book-author">
-            Ernest Hemingway
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          For Whom the Bell Tolls
-          <span class="book-author">
-            Ernest Hemingway
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Snows of Kilimanjaro and Other Stories
-          <span class="book-author">
-            Ernest Hemingway
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Graveyard Book
-          <span class="book-author">
-            Neil Gaiman
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Coraline
-          <span class="book-author">
-            Neil Gaiman
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Zero to One
-          <span class="book-author">
-            Peter Thiel
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Nineteen Eighty-Four
-          <span class="book-author">
-            George Orwell
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Slaughterhouse-Five
-          <span class="book-author">
-            Kurt Vonnegut
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Hard Things About Hard Things
-          <span class="book-author">
-            Ben Horow
-            itz</sp
-          an></p>
-      </li>
-      <li>
-        <p>
-          Nostromo
-          <span class="book-author">
-            Joseph Conrad
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Lean Startup
-          <span class="book-author">
-            Eric Ries
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Hitchhiker's Guide to the Galaxy
-          <span class="book-author">
-            Douglas Adams</span></p>
-      </li>
-      <li>
-        <p>
-          A Song of Ice and Fire
-          <span class="book-author">
-            George RR Martin
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Hobbit
-          <span class="book-author">
-            JRR Tolkein
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          Of Mice and Men
-          <span class="book-author">
-            John Steinbeck
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Magician's Nephew
-          <span class="book-author">
-            CS Lewis
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Catcher in the Rye
-          <span class="book-author">
-            JD Salinger
-          </span>
-        </p>
-      </li>
-      <li>
-        <p>
-          The Alchemist
-          <span class="book-author">
-            Paulo Coelho
-          </span>
-        </p>
-      </li>
-    </li>
-    </ul>
-  </p>
+    <% end %>
+  </ul>
 </div>

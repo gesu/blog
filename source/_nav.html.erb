@@ -1,24 +1,34 @@
+<% pages = [
+  {
+    label: 'about',
+    link: 'index.html',
+    selected: current_page.data.active == 'index'
+  },
+  {
+    label: 'books',
+    link: 'books.html',
+    selected: current_page.data.active == 'books'
+  },
+  {
+    label: 'projects',
+    link: 'projects.html',
+    selected: current_page.data.active == 'projects'
+  },
+  {
+    label: 'cars',
+    link: 'cars.html',
+    selected: current_page.data.active == 'cars'
+  }
+] %>
+
 <nav class="page-nav">
   <div class="container">
     <ul class="unstyled">
-      <li>
-        <a href="/">me</a>
-      </li>
-      <li>
-        <%= link_to 'books', 'books.html' %>
-      </li>
-      <li>
-        <%= link_to 'cars', 'cars.html' %>
-      </li>
-      <li>
-        <a href="https://twitter.com/burritoregret" target="_blank">bad tweets</a>
-      </li>
-      <li>
-        <a href="https://instagram.com/gergesu/" target="_blank">bad pictures</a>
-      </li>
-      <li>
-        <a href="https://github.com/gesu" target="_blank">bad code</a>
-      </li>
+      <% pages.each do |page| %>
+        <li class="<%= 'selected' if page[:selected] %>">
+          <%= link_to page[:label], page[:link] %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>

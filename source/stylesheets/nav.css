@@ -1,0 +1,47 @@
+.page-nav ul {
+  font-size: 0;
+}
+
+.page-nav ul {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  position: absolute;
+  top: -4.5rem;
+  width: 100%;
+}
+
+.page-nav li {
+  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 1rem 0.5rem;
+  box-sizing: border-box;
+  width: 25%;
+  text-align: center;
+  font-family: "Open-Sans";
+  font-weight: 600;
+}
+
+.page-nav li a {
+  color: #fff;
+}
+
+.page-nav .selected a {
+  border-bottom: 2px solid #fff;
+}
+
+
+@media (min-width: 30rem) {
+  .page-nav ul {
+    margin-left: 0;
+    margin-right: 0;
+    top: -6rem;
+    left: 0.2rem;
+  }
+
+  .page-nav li {
+    text-align: left;
+    padding: 1em;
+    width: auto;
+  }
+}
