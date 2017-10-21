@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>{{ page.title }}</title>
+
+        <link rel="apple-touch-icon" sizes="60x60" href=/img/apple-touch-icon-60x60.png>
+        <link rel="apple-touch-icon" sizes="72x72" href=/img/apple-touch-icon-72x72.png>
+        <link rel="apple-touch-icon" sizes="76x76" href=/img/apple-touch-icon-76x76.png>
+        <link rel="apple-touch-icon" sizes="114x114" href=/img/apple-touch-icon-114x114.png>
+        <link rel="apple-touch-icon" sizes="120x120" href=/img/apple-touch-icon-120x120.png>
+        <link rel="icon" type="image/png" href=/img/favicon-32x32.png sizes="32x32">
+        <link rel="icon" type="image/png" href=/img/favicon-96x96.png sizes="96x96">
+        <link rel="icon" type="image/png" href=/img/favicon-16x16.png sizes="16x16">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/base.css">
+
+        {% for file in page.css %}
+            <link rel="stylesheet" href="/css/{{ file }}.css">
+        {% endfor %}
+    </head>
+
+    <body>
+        <div class="container container-padding">
+            {{ content }}
+        </div>
+
+        <footer>
+            {% for file in page.js %}
+                <script src='/js/{{ file }}.js' type="text/javascript"></script>
+            {% endfor %}
+        </footer>
+    </body>
+</html>

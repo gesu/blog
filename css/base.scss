@@ -1,0 +1,53 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    line-height: 1;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem }
+
+.container {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.un-decorated-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.un-decorated-list li {
+    display: inline-block;
+    margin-right: 1em;
+}
