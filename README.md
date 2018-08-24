@@ -1,6 +1,31 @@
-From clean git clone:
+# Installation
+Set up ruby with rbenv
 
-1. Set up ruby, rbenv
-2. gem install jekyll bundler
+```
+brew install rbenv
+```
 
+Install and use ruby version 2.5.1
+
+```
+rbenv install 2.5.1
+rbenv local 2.5.1
+```
+
+Install bundler and jekyll
+
+```
+gem install jekyll bundler
+```
+
+Install other deps
+
+```
 bundle install
+```
+
+Build (and watch)
+
+```
+bundle exec jekyll build --watch
+```
