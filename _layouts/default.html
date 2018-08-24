@@ -1,19 +1,13 @@
 <!doctype html>
 <html lang="en">
     <head>
-        {% include_relative _layouts/analytics.html %}
+        {% include_relative _layouts/headers/analytics.html %}
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
         <title>{{ page.title }}</title>
 
-        <link rel="apple-touch-icon" sizes="60x60" href=/img/apple-touch-icon-60x60.png>
-        <link rel="apple-touch-icon" sizes="72x72" href=/img/apple-touch-icon-72x72.png>
-        <link rel="apple-touch-icon" sizes="76x76" href=/img/apple-touch-icon-76x76.png>
-        <link rel="apple-touch-icon" sizes="114x114" href=/img/apple-touch-icon-114x114.png>
-        <link rel="apple-touch-icon" sizes="120x120" href=/img/apple-touch-icon-120x120.png>
-        <link rel="icon" type="image/png" href=/img/favicon-32x32.png sizes="32x32">
-        <link rel="icon" type="image/png" href=/img/favicon-96x96.png sizes="96x96">
-        <link rel="icon" type="image/png" href=/img/favicon-16x16.png sizes="16x16">
+        {% include_relative _layouts/headers/favicon.html %}
 
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/base.css">
