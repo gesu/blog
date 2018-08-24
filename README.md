@@ -24,8 +24,8 @@ Install other deps
 bundle install
 ```
 
-Build (and watch)
+Build and serve
 
 ```
-bundle exec jekyll build --watch
+bundle exec jekyll serve
 ```
