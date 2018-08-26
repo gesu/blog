@@ -1,7 +1,6 @@
-exclude: [
-  "README.md",
-  "config.rb",
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules"
-]
+exclude:
+  - assets
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
